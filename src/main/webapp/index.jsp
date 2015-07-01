@@ -11,21 +11,13 @@
 	<h1>FRIDGE, RECIPE & FRIENDS</h1>
 	</header>
 
-
-<form action="login.jsp" method="POST">
-		
-			<body><center>
-				<input type="submit" value="Login"/>
-			</body>
+	<body><center>
+	<form id="formularz" action="login.jsp" method="POST">
+		<input class="submit" type="submit" value="Login"/>
 	</form>
-		
+	<form id="formularz" action="register.jsp" method="POST">
+		<input class="submit" type="submit" value="Register"/>
+	</form>
+	</body>
 	
-		<body><center>
-			<form action="register.jsp" method="POST">
-				<input type="submit" value="Register"/>
-			</form>
-		</body>
-		
-	
-
 	<%@ include file="stopka.jsp" %>
