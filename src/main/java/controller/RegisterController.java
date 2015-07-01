@@ -39,8 +39,8 @@ public class RegisterController extends HttpServlet {
 			user.setLogin(email);
 			user.setPassword(md5.getMD5(password));
 			dao.addUser(user);
-			out.print("Added");
-			request.getRequestDispatcher("link.html").include(request, response);
+			out.print("You have successfully registered!");
+			request.getRequestDispatcher("login.jsp").include(request, response);
         }  
         else{  
             out.print("Sorry, something went wrong. Try again.");  

@@ -23,9 +23,7 @@
 		</center></div>
 	</div>
 <script type="text/javascript" src="stopka.html"> </script>
-	<footer style="margin-top:40px;">
-	Copyright - Team4 
-	</footer>
+	<%@ include file="stopka.jsp" %>
 
 </body>
 

@@ -12,8 +12,9 @@ public final class indexuser_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants = new java.util.ArrayList<String>(2);
     _jspx_dependants.add("/menu.jsp");
+    _jspx_dependants.add("/stopka.jsp");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -93,9 +94,15 @@ public final class indexuser_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t</center></div>\r\n");
       out.write("\t</div>\r\n");
       out.write("<script type=\"text/javascript\" src=\"stopka.html\"> </script>\r\n");
-      out.write("\t<footer style=\"margin-top:40px;\">\r\n");
-      out.write("\tCopyright - Team4 \r\n");
-      out.write("\t</footer>\r\n");
+      out.write("\t");
+      out.write("<br>\r\n");
+      out.write("<hr>\r\n");
+      out.write("<h2>\r\n");
+      out.write("\tCOPYRIGHT: TEAM4\r\n");
+      out.write("</h2>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>");
+      out.write("\r\n");
       out.write("\r\n");
       out.write("</body>\r\n");
       out.write("\r\n");

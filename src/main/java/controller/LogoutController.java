@@ -17,7 +17,7 @@
                 session.invalidate();  
                   
                 out.print("You are successfully logged out!");  
-                request.getRequestDispatcher("link.html").include(request, response);    
+                request.getRequestDispatcher("index.jsp").include(request, response);    
                 out.close();  
         }  
     }  

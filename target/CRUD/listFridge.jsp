@@ -43,9 +43,7 @@
 		</center></div>
 	</div>
 
-	<footer style="margin-top:40px;">
-	Copyright - Team4 
-	</footer>
+	<%@ include file="stopka.jsp" %>
 
 </body>
 
