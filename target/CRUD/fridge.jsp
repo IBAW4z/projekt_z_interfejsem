@@ -13,30 +13,33 @@
 	<header>
 	<h1>Fridge content</h1>
 	</header>
-
-	<div id="center" style="text-align:center;" name="interfejs">
-	
-		<%@include file="menu.jsp"%>
+<%@include file="menu.jsp"%>
 
 		<div id="robocza"><center>
 
-			<form method="POST" action='FridgeController' name="frmAddProduct">
-				Recipe ID : <input type="text" readonly="readonly" name="productId"
+			<form id="formularz" method="POST" action='FridgeController' name="frmAddProduct">
+				<!--Product ID : --> <input type="hidden" readonly="readonly" name="productId"
 								   value="${fridge.productID}" /> <br />
-				Name : <input
-					type="text" name="name"
+				<label for="name">Name : </label><input
+					id="name" type="text" name="name"
 					value="<c:out value="${fridge.name}" />" /> <br />
-				Type : <input
-					type="text" name="amount"
+				<label for="amount"> Amount : </label><input
+					id="amount" type="text" name="amount"
 					value="<c:out value="${fridge.amount}" />" /> <br />
-				Difficulty : <input
-					type="text" name="userID"
-					value="<c:out value="${fridge.userID}" />" /> <br />
+				<!--User ID : <input
+					type="text" readonly="readonly" name="userID"
+					value="<c:out value="${fridge.userID}" />" /> <br />-->
 
-				<input type="submit" value="Add" />
+				<input class="submit" type="submit" value="Add" />
 			</form>
 
 		</center></div>
 	</div>
 
-	<%@ include file="stopka.jsp" %>
+	<footer style="margin-top:40px;">
+	Copyright - Team4 
+	</footer>
+
+</body>
+
+</html>

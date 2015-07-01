@@ -25,29 +25,49 @@
 	<h1>Add recipe</h1>
 	</header>
 
-	<div id="center" style="text-align:center;" name="interfejs">
-	
-		<%@include file="menu.jsp"%>
-		
+<%@include file="menu.jsp"%>
 		<div id="robocza"><center>
 
-			<form method="POST" action='RecipeController' name="frmAddRecipe">
-				Recipe ID : <input type="text" readonly="readonly" name="recipeId"
+			<form id="formularz" method="POST" action='RecipeController' name="frmAddRecipe">
+				<!--Recipe ID :--> <input type="hidden" readonly="readonly" name="recipeId"
 					value="${recipe.recipeId}" /> <br />
-				Name : <input
-					type="text" name="dishname"
+				<label for="name">Name : </label><input
+					id="name" type="text" name="dishname"
 					value="<c:out value="${recipe.name}" />" /> <br />
-				Type : <input
+				<label for="type">Type : </label><!--<select	multiple="multiple" name="dishtype" value="<c:out value="${recipe.type}" />" >
+						<option>SOUP</option>
+						<option>DESSERT</option>
+						<option>SALAD</option>
+						<option>STARTER</option>
+						<option>MAIN_COURSE</option>
+						<option>DRINK</option>
+					</select><br />-->
+					<input id="type"
 					type="text" name="dishtype"
-					value="<c:out value="${recipe.type}" />" /> <br />
-				Difficulty : <input
-					type="text" name="dishdifficulty"
-					value="<c:out value="${recipe.difficulty}" />" /> <br />
-				Flavour : <input type="text" name="dishflavour"
-					value="<c:out value="${recipe.flavour}" />" /> <br />
-				<input type="submit" value="Add" />
+					value="<c:out value="${recipe.type}" />" /><br>
+				<label for="difficulty">Difficulty : </label><input
+					id="difficulty" type="text" name="dishdifficulty"
+					value="<c:out value="${recipe.difficulty}" />" /><br><!--<select multiple="multiple" name="dishdifficulty" value="<c:out value="${recipe.difficulty}" />" >
+						<option>EASY</option>
+						<option>MEDIUM</option>
+						<option>HARD</option>
+					</select><br /> -->
+				<label for="flavour">Flavour : </label><input id="flavour" type="text" name="dishflavour"
+					value="<c:out value="${recipe.flavour}" />" /><br><!--<select multiple="multiple" name="dishflavour" value="<c:out value="${recipe.flavour}" />" >
+						<option>SWEET</option>
+						<option>BITTER</option>
+						<option>SALTY</option>
+						<option>SOUR</option>
+						<option>SPICY</option>
+					</select><br /> -->
+				
+				<input class="submit" type="submit" value="Add" />
 			</form>
 		</center></div>
 	</div>
 
 	<%@ include file="stopka.jsp" %>
+
+</body>
+
+</html>

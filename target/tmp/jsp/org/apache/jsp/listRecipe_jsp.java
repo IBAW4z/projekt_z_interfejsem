@@ -74,9 +74,6 @@ public final class listRecipe_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<h1>All recipes</h1>\n");
       out.write("\t</header>\n");
       out.write("\n");
-      out.write("\t<div id=\"center\" style=\"text-align:center;\" name=\"interfejs\">\n");
-      out.write("\t\n");
-      out.write("\t\t");
       out.write("\t<div id=\"center\" style=\"text-align:center;\" name=\"interfejs\">\r\n");
       out.write("\t\t<div id=\"menu_place\" name=\"panel_sterowania\">\r\n");
       out.write("\t\t\t<div id=\"pole_batona\">\r\n");
@@ -100,7 +97,6 @@ public final class listRecipe_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t</div>");
       out.write("\n");
-      out.write("\t\t\n");
       out.write("\t\t<div id=\"robocza\"><center>\n");
       out.write("\t\t\t\n");
       out.write("\t\t\t<table border=1>\n");
@@ -132,6 +128,11 @@ public final class listRecipe_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</h2>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
+      out.write("\n");
+      out.write("\n");
+      out.write("</body>\n");
+      out.write("\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

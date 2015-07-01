@@ -12,10 +12,7 @@
 	<h1>All recipes</h1>
 	</header>
 
-	<div id="center" style="text-align:center;" name="interfejs">
-	
-		<%@include file="menu.jsp"%>
-		
+<%@include file="menu.jsp"%>
 		<div id="robocza"><center>
 			
 			<table border=1>
@@ -48,4 +45,10 @@
 		</center></div>
 	</div>
 
-	<%@ include file="stopka.jsp" %>
+	<footer style="margin-top:40px;">
+	Copyright - Team4 
+	</footer>
+
+</body>
+
+</html>

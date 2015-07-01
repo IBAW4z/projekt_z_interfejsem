@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 
-<form action="<?echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+<form action="RegisterController" method="POST">
 		<h1><table>
 			<tbody>
-				<tr><td>e-mail: </td><td><input type="text" name="new_email" /></td></tr>
-				<tr><td>Password: </td><td><input type="password" name="new_haslo" /></td></tr>
-				<tr><td>Repeat password: </td><td><input type="text" name="new_name" /></td></tr>
+				<tr><td>e-mail: </td><td><input type="text" name="email" /></td></tr>
+				<tr><td>Password: </td><td><input type="password" name="password" /></td></tr>
+				<tr><td>Repeat password: </td><td><input type="password" name="password2" /></td></tr>
 				<tr><td> </td><td><input type="submit" name="submit_rejestracja" value="Register"/></td></tr>
 			</tbody>
 		</table></h1>

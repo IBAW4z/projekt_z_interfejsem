@@ -1,12 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" href="./style.css" type="text/css">
-  </head>
-  
+	<div id="center" style="text-align:center;" name="interfejs">
 		<div id="menu_place" name="panel_sterowania">
 			<div id="pole_batona">
 				<p><a id="odsylacz" href="RecipeController?action=insert">Add Recipe</a></p>
@@ -25,8 +17,6 @@
 				<p><a id="odsylacz" href="RecipeController?action=insert">Other operation</a></p>
 			</div>
 			<div id="pole_batona" style="top:370px;">
-				<p><a id="odsylacz" href="RecipeController?action=insert">Other operation</a></p>
+				<p><a id="odsylacz" href="LogoutController">Logout</a></p>
 			</div>
 		</div>
-		
-<%@ include file="stopka.jsp" %>

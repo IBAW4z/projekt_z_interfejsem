@@ -12,10 +12,7 @@
 	<h1>Your fridge</h1>
 	</header>
 
-	<div id="center" style="text-align:center;" name="interfejs">
-	
-		<%@include file="menu.jsp"%>
-		
+	<%@include file="menu.jsp"%>
 		<div id="robocza"><center>
 			
 			<table border=1>
@@ -34,7 +31,7 @@
 							<td><c:out value="${product.productID}"/></td>
 							<td><c:out value="${product.name}"/></td>
 							<td><c:out value="${product.amount}"/></td>
-							<td>><c:out value="${product.userID}"/></td>
+							<td><c:out value="${product.userID}"/></td>
 							<td><a id="odsylacz" href="FridgeController?action=edit&productId=<c:out value="${product.productID}"/>">Update</a>
 							</td>
 							<td><a id="odsylacz" href="FridgeController?action=delete&productId=<c:out value="${product.productID}"/>">Delete</a>
@@ -47,3 +44,7 @@
 	</div>
 
 	<%@ include file="stopka.jsp" %>
+
+</body>
+
+</html>

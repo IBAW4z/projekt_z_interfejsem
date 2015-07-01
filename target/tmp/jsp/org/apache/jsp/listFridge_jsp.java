@@ -74,9 +74,7 @@ public final class listFridge_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<h1>Your fridge</h1>\n");
       out.write("\t</header>\n");
       out.write("\n");
-      out.write("\t<div id=\"center\" style=\"text-align:center;\" name=\"interfejs\">\n");
-      out.write("\t\n");
-      out.write("\t\t");
+      out.write("\t");
       out.write("\t<div id=\"center\" style=\"text-align:center;\" name=\"interfejs\">\r\n");
       out.write("\t\t<div id=\"menu_place\" name=\"panel_sterowania\">\r\n");
       out.write("\t\t\t<div id=\"pole_batona\">\r\n");
@@ -100,7 +98,6 @@ public final class listFridge_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t</div>");
       out.write("\n");
-      out.write("\t\t\n");
       out.write("\t\t<div id=\"robocza\"><center>\n");
       out.write("\t\t\t\n");
       out.write("\t\t\t<table border=1>\n");
@@ -131,6 +128,11 @@ public final class listFridge_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</h2>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
+      out.write("\n");
+      out.write("\n");
+      out.write("</body>\n");
+      out.write("\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -173,7 +175,7 @@ public final class listFridge_jsp extends org.apache.jasper.runtime.HttpJspBase
           if (_jspx_meth_c_out_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
             return true;
           out.write("</td>\n");
-          out.write("\t\t\t\t\t\t\t<td>>");
+          out.write("\t\t\t\t\t\t\t<td>");
           if (_jspx_meth_c_out_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
             return true;
           out.write("</td>\n");
