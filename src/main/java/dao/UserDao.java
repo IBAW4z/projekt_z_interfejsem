@@ -38,7 +38,7 @@ public class UserDao {
 
             if (rs.next()) {
 				String tmp=rs.getString("password");
-				System.out.println(md5.getMD5(password));
+				//System.out.println(md5.getMD5(password));
 				//String tmp=md5.getMD5(password);
 				//System.out.println("haslo w md5:"+tmp);
 				if (tmp.equals(md5.getMD5(password))){

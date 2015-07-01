@@ -53,12 +53,12 @@
   </servlet-mapping>  
   	  <servlet>  
     <description></description>  
-    <display-name>ProfileController</display-name>  
-    <servlet-name>ProfileController</servlet-name>  
-    <servlet-class>ProfileController</servlet-class>  
+    <display-name>RegisterController</display-name>  
+    <servlet-name>RegisterController</servlet-name>  
+    <servlet-class>RegisterController</servlet-class>  
   </servlet>  
   <servlet-mapping>  
-    <servlet-name>ProfileController</servlet-name>  
-    <url-pattern>/ProfileController</url-pattern>  
+    <servlet-name>RegisterController</servlet-name>  
+    <url-pattern>/RegisterController</url-pattern>  
   </servlet-mapping>
 </web-app>

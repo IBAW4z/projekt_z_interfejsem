@@ -33,7 +33,7 @@ public class LoginController extends HttpServlet {
 		user=dao.getUserById(name, password);
 
         if(user.getLogin()!=null){  
-			out.print("Welcome, "+name);  
+			//out.print("Welcome, "+name);  
 			HttpSession session=request.getSession();  
 			session.setAttribute("userID",user.getUserId());
 			String forward="indexuser.jsp";
@@ -42,7 +42,7 @@ public class LoginController extends HttpServlet {
         }  
         else{  
             out.print("Sorry, username or password error!");  
-            request.getRequestDispatcher("index1.jsp").include(request, response);  
+            request.getRequestDispatcher("index.jsp").include(request, response);  
         }  
         out.close();  
     }  

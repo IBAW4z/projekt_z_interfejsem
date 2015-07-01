@@ -1,7 +1,6 @@
 main\java\controller\RecipeController.class
 main\java\model\eFlavour.class
 main\java\controller\FridgeController.class
-ProfileController.class
 main\java\model\eDifficulty.class
 main\java\model\Fridge.class
 main\java\model\MD5.class

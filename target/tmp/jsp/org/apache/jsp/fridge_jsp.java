@@ -12,8 +12,9 @@ public final class fridge_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants = new java.util.ArrayList<String>(2);
     _jspx_dependants.add("/menu.jsp");
+    _jspx_dependants.add("/stopka.jsp");
   }
 
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_out_value_nobody;
@@ -70,6 +71,10 @@ public final class fridge_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<header>\n");
       out.write("\t<h1>Fridge content</h1>\n");
       out.write("\t</header>\n");
+      out.write("\n");
+      out.write("\t<div id=\"center\" style=\"text-align:center;\" name=\"interfejs\">\n");
+      out.write("\t\n");
+      out.write("\t\t");
       out.write("\t<div id=\"center\" style=\"text-align:center;\" name=\"interfejs\">\r\n");
       out.write("\t\t<div id=\"menu_place\" name=\"panel_sterowania\">\r\n");
       out.write("\t\t\t<div id=\"pole_batona\">\r\n");
@@ -93,32 +98,11 @@ public final class fridge_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t</div>");
       out.write("\n");
-      out.write("\t<!--<div id=\"center\" style=\"text-align:center;\" name=\"interfejs\">\n");
-      out.write("\t\t<div id=\"menu_place\" name=\"panel_sterowania\">\n");
-      out.write("\t\t\t<div id=\"pole_batona\">\n");
-      out.write("\t\t\t\t<p><a id=\"odsylacz\" href=\"RecipeController?action=insert\">Add Recipe</a></p>\n");
-      out.write("\t\t\t\t<!--<input type=\"submit\" value=\"Add recipe\" name=\"Add_recipe\">-->\n");
-      out.write("\t<!--\t\t</div>\n");
-      out.write("\t\t\t<div id=\"pole_batona\" style=\"top:90px;\">\n");
-      out.write("\t\t\t\t<p><a id=\"odsylacz\" href=\"FridgeController?action=insert\">Add Product</a></p>\n");
-      out.write("\t\t\t</div>\n");
-      out.write("\t\t\t<div id=\"pole_batona\" style=\"top:160px;\">\n");
-      out.write("\t\t\t\t<p><a id=\"odsylacz\" href=\"FridgeController?action=listFridge\">Show all Products</a></p>\n");
-      out.write("\t\t\t</div>\n");
-      out.write("\t\t\t<div id=\"pole_batona\" style=\"top:230px;\">\n");
-      out.write("\t\t\t\t<p><a id=\"odsylacz\" href=\"RecipeController?action=listRecipe\">Show all Recipes</a></p>\n");
-      out.write("\t\t\t</div>\n");
-      out.write("\t\t\t<div id=\"pole_batona\" style=\"top:300px;\">\n");
-      out.write("\t\t\t\t<p><a id=\"odsylacz\" href=\"RecipeController?action=insert\">Other operation</a></p>\n");
-      out.write("\t\t\t</div>\n");
-      out.write("\t\t\t<div id=\"pole_batona\" style=\"top:370px;\">\n");
-      out.write("\t\t\t\t<p><a id=\"odsylacz\" href=\"RecipeController?action=insert\">Other operation</a></p>\n");
-      out.write("\t\t\t</div>\n");
-      out.write("\t\t</div> -->\n");
+      out.write("\n");
       out.write("\t\t<div id=\"robocza\"><center>\n");
       out.write("\n");
       out.write("\t\t\t<form method=\"POST\" action='FridgeController' name=\"frmAddProduct\">\n");
-      out.write("\t\t\t\tProduct ID : <input type=\"text\" readonly=\"readonly\" name=\"productId\"\n");
+      out.write("\t\t\t\tRecipe ID : <input type=\"text\" readonly=\"readonly\" name=\"productId\"\n");
       out.write("\t\t\t\t\t\t\t\t   value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${fridge.productID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("\" /> <br />\n");
@@ -128,14 +112,14 @@ public final class fridge_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_c_out_0(_jspx_page_context))
         return;
       out.write("\" /> <br />\n");
-      out.write("\t\t\t\tAmount : <input\n");
+      out.write("\t\t\t\tType : <input\n");
       out.write("\t\t\t\t\ttype=\"text\" name=\"amount\"\n");
       out.write("\t\t\t\t\tvalue=\"");
       if (_jspx_meth_c_out_1(_jspx_page_context))
         return;
       out.write("\" /> <br />\n");
-      out.write("\t\t\t\tUser ID : <input\n");
-      out.write("\t\t\t\t\ttype=\"text\" readonly=\"readonly\" name=\"userID\"\n");
+      out.write("\t\t\t\tDifficulty : <input\n");
+      out.write("\t\t\t\t\ttype=\"text\" name=\"userID\"\n");
       out.write("\t\t\t\t\tvalue=\"");
       if (_jspx_meth_c_out_2(_jspx_page_context))
         return;
@@ -147,13 +131,14 @@ public final class fridge_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t</center></div>\n");
       out.write("\t</div>\n");
       out.write("\n");
-      out.write("\t<footer style=\"margin-top:40px;\">\n");
-      out.write("\tCopyright - Team4 \n");
-      out.write("\t</footer>\n");
-      out.write("\n");
-      out.write("</body>\n");
-      out.write("\n");
-      out.write("</html>\n");
+      out.write("\t");
+      out.write("<br>\r\n");
+      out.write("<hr>\r\n");
+      out.write("<h2>\r\n");
+      out.write("\tCOPYRIGHT: TEAM4\r\n");
+      out.write("</h2>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -12,7 +12,10 @@
 	<h1>Your fridge</h1>
 	</header>
 
-	<%@include file="menu.jsp"%>
+	<div id="center" style="text-align:center;" name="interfejs">
+	
+		<%@include file="menu.jsp"%>
+		
 		<div id="robocza"><center>
 			
 			<table border=1>
@@ -43,10 +46,4 @@
 		</center></div>
 	</div>
 
-	<footer style="margin-top:40px;">
-	Copyright - Team4 
-	</footer>
-
-</body>
-
-</html>
+	<%@ include file="stopka.jsp" %>

@@ -22,7 +22,7 @@ public class RegisterController extends HttpServlet {
 		md5 = new MD5();
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)  
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)  
                     throws ServletException, IOException {  
         response.setContentType("text/html");  
         PrintWriter out=response.getWriter();  
@@ -40,6 +40,7 @@ public class RegisterController extends HttpServlet {
 			user.setPassword(md5.getMD5(password));
 			dao.addUser(user);
 			out.print("Added");
+			request.getRequestDispatcher("link.html").include(request, response);
         }  
         else{  
             out.print("Sorry, something went wrong. Try again.");  

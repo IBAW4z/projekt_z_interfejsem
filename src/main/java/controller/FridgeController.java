@@ -37,6 +37,7 @@ public class FridgeController extends HttpServlet {
 			String forward="";
 			String action = request.getParameter("action");
 			System.out.println("a: " + action);
+			try{
 			int ID= (Integer) session.getAttribute("userID");
 			//System.out.println("ID: " + ID);
 			if (action!=null && action.equalsIgnoreCase("delete")){
@@ -58,10 +59,15 @@ public class FridgeController extends HttpServlet {
 
 			RequestDispatcher view = request.getRequestDispatcher(forward);
 			view.forward(request, response);
+			}
+			catch (Exception e){
+				System.out.println("Login first");
+				request.getRequestDispatcher("index.jsp").include(request, response); 
+			};
 		}
 		else{  
             System.out.println("Please login first");  
-            request.getRequestDispatcher("index1.jsp").include(request, response);  
+            request.getRequestDispatcher("index.jsp").include(request, response);  
         }  
 	}
 

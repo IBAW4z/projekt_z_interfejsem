@@ -12,8 +12,9 @@ public final class recipe_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants = new java.util.ArrayList<String>(2);
     _jspx_dependants.add("/menu.jsp");
+    _jspx_dependants.add("/stopka.jsp");
   }
 
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_out_value_nobody;
@@ -82,6 +83,9 @@ public final class recipe_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<h1>Add recipe</h1>\n");
       out.write("\t</header>\n");
       out.write("\n");
+      out.write("\t<div id=\"center\" style=\"text-align:center;\" name=\"interfejs\">\n");
+      out.write("\t\n");
+      out.write("\t\t");
       out.write("\t<div id=\"center\" style=\"text-align:center;\" name=\"interfejs\">\r\n");
       out.write("\t\t<div id=\"menu_place\" name=\"panel_sterowania\">\r\n");
       out.write("\t\t\t<div id=\"pole_batona\">\r\n");
@@ -105,6 +109,7 @@ public final class recipe_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t</div>");
       out.write("\n");
+      out.write("\t\t\n");
       out.write("\t\t<div id=\"robocza\"><center>\n");
       out.write("\n");
       out.write("\t\t\t<form method=\"POST\" action='RecipeController' name=\"frmAddRecipe\">\n");
@@ -140,13 +145,14 @@ public final class recipe_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t</center></div>\n");
       out.write("\t</div>\n");
       out.write("\n");
-      out.write("\t<footer style=\"margin-top:40px;\">\n");
-      out.write("\tCopyright - Team4 \n");
-      out.write("\t</footer>\n");
-      out.write("\n");
-      out.write("</body>\n");
-      out.write("\n");
-      out.write("</html>\n");
+      out.write("\t");
+      out.write("<br>\r\n");
+      out.write("<hr>\r\n");
+      out.write("<h2>\r\n");
+      out.write("\tCOPYRIGHT: TEAM4\r\n");
+      out.write("</h2>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

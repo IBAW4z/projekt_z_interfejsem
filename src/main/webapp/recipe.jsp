@@ -25,7 +25,10 @@
 	<h1>Add recipe</h1>
 	</header>
 
-<%@include file="menu.jsp"%>
+	<div id="center" style="text-align:center;" name="interfejs">
+	
+		<%@include file="menu.jsp"%>
+		
 		<div id="robocza"><center>
 
 			<form method="POST" action='RecipeController' name="frmAddRecipe">
@@ -47,10 +50,4 @@
 		</center></div>
 	</div>
 
-	<footer style="margin-top:40px;">
-	Copyright - Team4 
-	</footer>
-
-</body>
-
-</html>
+	<%@ include file="stopka.jsp" %>
