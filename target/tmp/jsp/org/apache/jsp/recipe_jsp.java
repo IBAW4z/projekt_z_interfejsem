@@ -113,13 +113,13 @@ public final class recipe_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\tvalue=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${recipe.recipeId}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("\" /> <br />\n");
-      out.write("\t\t\t\t<label for=\"name\">Name : </label><input\n");
+      out.write("\t\t\t\t<label for=\"name\">Name: </label><input\n");
       out.write("\t\t\t\t\tid=\"name\" type=\"text\" name=\"dishname\"\n");
       out.write("\t\t\t\t\tvalue=\"");
       if (_jspx_meth_c_out_0(_jspx_page_context))
         return;
       out.write("\" /> <br />\n");
-      out.write("\t\t\t\t<label for=\"type\">Type : </label><!--<select\tmultiple=\"multiple\" name=\"dishtype\" value=\"");
+      out.write("\t\t\t\t<label for=\"type\">Type: </label><!--<select\tmultiple=\"multiple\" name=\"dishtype\" value=\"");
       if (_jspx_meth_c_out_1(_jspx_page_context))
         return;
       out.write("\" >\n");
@@ -136,7 +136,7 @@ public final class recipe_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_c_out_2(_jspx_page_context))
         return;
       out.write("\" /><br>\n");
-      out.write("\t\t\t\t<label for=\"difficulty\">Difficulty : </label><input\n");
+      out.write("\t\t\t\t<label for=\"difficulty\">Difficulty: </label><input\n");
       out.write("\t\t\t\t\tid=\"difficulty\" type=\"text\" name=\"dishdifficulty\"\n");
       out.write("\t\t\t\t\tvalue=\"");
       if (_jspx_meth_c_out_3(_jspx_page_context))
@@ -149,7 +149,7 @@ public final class recipe_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t<option>MEDIUM</option>\n");
       out.write("\t\t\t\t\t\t<option>HARD</option>\n");
       out.write("\t\t\t\t\t</select><br /> -->\n");
-      out.write("\t\t\t\t<label for=\"flavour\">Flavour : </label><input id=\"flavour\" type=\"text\" name=\"dishflavour\"\n");
+      out.write("\t\t\t\t<label for=\"flavour\">Flavour: </label><input id=\"flavour\" type=\"text\" name=\"dishflavour\"\n");
       out.write("\t\t\t\t\tvalue=\"");
       if (_jspx_meth_c_out_5(_jspx_page_context))
         return;

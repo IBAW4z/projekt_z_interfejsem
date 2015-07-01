@@ -20,10 +20,10 @@
 			<form id="formularz" method="POST" action='FridgeController' name="frmAddProduct">
 				<!--Product ID : --> <input type="hidden" readonly="readonly" name="productId"
 								   value="${fridge.productID}" /> <br />
-				<label for="name">Name : </label><input
+				<label for="name">Name: </label><input
 					id="name" type="text" name="name"
 					value="<c:out value="${fridge.name}" />" /> <br />
-				<label for="amount"> Amount : </label><input
+				<label for="amount"> Amount: </label><input
 					id="amount" type="text" name="amount"
 					value="<c:out value="${fridge.amount}" />" /> <br />
 				<!--User ID : <input

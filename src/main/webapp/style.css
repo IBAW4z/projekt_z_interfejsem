@@ -185,4 +185,39 @@ table2 {
 	float: inherit;
 	margin-left: auto;
 	margin-right: auto;
-</style>
+}
+
+#formularz {
+	
+	width: 150px;
+	
+	text-align: right;
+
+}
+
+#formularz label {
+	
+	width: 150px;
+	
+	float: left;
+	
+	text-align: left;
+
+}
+
+#formularz input {
+	
+	width: 200px;
+
+}
+
+
+
+#formularz .submit {
+	
+	width: 170px;
+
+}
+
+
+</style>>

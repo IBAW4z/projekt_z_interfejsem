@@ -102,13 +102,13 @@ public final class fridge_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t\t\t   value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${fridge.productID}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("\" /> <br />\n");
-      out.write("\t\t\t\t<label for=\"name\">Name : </label><input\n");
+      out.write("\t\t\t\t<label for=\"name\">Name: </label><input\n");
       out.write("\t\t\t\t\tid=\"name\" type=\"text\" name=\"name\"\n");
       out.write("\t\t\t\t\tvalue=\"");
       if (_jspx_meth_c_out_0(_jspx_page_context))
         return;
       out.write("\" /> <br />\n");
-      out.write("\t\t\t\t<label for=\"amount\"> Amount : </label><input\n");
+      out.write("\t\t\t\t<label for=\"amount\"> Amount: </label><input\n");
       out.write("\t\t\t\t\tid=\"amount\" type=\"text\" name=\"amount\"\n");
       out.write("\t\t\t\t\tvalue=\"");
       if (_jspx_meth_c_out_1(_jspx_page_context))
